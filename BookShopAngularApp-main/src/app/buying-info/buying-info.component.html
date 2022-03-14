@@ -1,0 +1,33 @@
+
+
+
+<body>
+    <div id="navbar">
+        <app-navbar></app-navbar>
+     </div>
+<div class="page">
+<p>Introduceti-va datele pentru plata!</p>
+
+<form  #newUserInfo="ngForm"  (ngSubmit)="buyMethod()" >
+ <p>First name:</p>
+<input type="text" name="firstName" id="firstName" [(ngModel)]="user.first_name"><br>
+<p>Last name:</p>
+<input type="text" name="lastName"  id="lastName" [(ngModel)]="user.last_name"><br>
+<p>Email adress:</p>
+<input type="text" name="email"   id="email"   [(ngModel)]="user.email"><br>
+
+<p>Adress to deliver:</p>
+<input type="text" name="address"  id="address" [(ngModel)]="user.address"><br>
+<p> Phone:</p>
+<input type="text" name="phone" id="phone" [(ngModel)]="user.phone"><br>
+ <p>card number:<p>
+<input type="text"  name="cardNumber" id="cardNumber"  [(ngModel)]="user.card_number"><br>
+
+
+
+<input type="submit" value="Finalizare plata" [disabled]="!newUserInfo.form.valid"  >
+
+</form>
+
+</div>
+</body>

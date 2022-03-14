@@ -1,0 +1,64 @@
+<html>
+
+<body>
+
+  <div id="navbar">
+  <app-navbar></app-navbar>
+  </div>
+  <br>
+
+
+
+
+
+  <div style="float:right; padding-right:150px" id="getRandom"> >
+    <form name="lucky_book" #Lucky="ngForm" (ngSubmit)=" getRandomImage()">
+      <button name="btn" type="submit">I am feeling lucky </button>
+    </form>
+  </div>
+  <br>
+
+
+
+  <div class="row">
+
+
+
+    <div class="col">
+
+
+      <div id="mainPart" class="middle">
+
+        <img width=50px height=50px src="assets/back.png" (click)="changeImg2()" />
+        <img id="mainimg" width=700px height=500px class="center" src="assets/download.jpg" />
+        <img width=50px height=50px src="assets/next.png" (click)="changeImg()" />
+
+      </div>
+      <figure style="width:100" >
+      <input type="image" id="linkTolucky"> 
+      <figcaption id="figcap" style="word-break: break-all"> </figcaption>
+     </figure>
+   
+
+
+
+
+    </div>
+
+
+
+
+  </div>
+
+
+  <div id="productSpace" style="padding-top:75px">
+     
+
+
+  </div>
+
+
+
+</body>
+
+</html>

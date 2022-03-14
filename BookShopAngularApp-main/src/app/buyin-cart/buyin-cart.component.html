@@ -1,0 +1,48 @@
+
+
+<html>
+<body>
+    
+    <div id="navbar">
+        <app-navbar></app-navbar>
+        </div>
+   <br>
+      
+      
+<p style="margin:auto;text-align:center;">Buying cart</p>
+
+<table id="tableProducts">
+    <tr id="Tableheader">
+      <th>Product Id</th>
+      <th>ProductName</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th>Total</th>
+     </tr>
+
+    
+
+    </table>
+    <div style="display:inline-block">
+    <form  name="delete" #Del="ngForm" (ngSubmit)="delete_product()">
+    <button type="submit" >Delete Element</button>
+    </form>
+
+    <form  name="modify" #Modify="ngForm" (ngSubmit)="modify_product()">
+    <button type="submit" >Modify Quantity</button>
+    </form>
+    </div>
+    <br>
+    <br>
+<a routerLink="/buyinfo" routerLinkActive="active">
+<button>
+Continue payment
+</button>
+</a>
+
+
+  
+  
+
+</body>
+</html>

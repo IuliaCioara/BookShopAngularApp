@@ -1,0 +1,12 @@
+body
+{
+background-image:url("C:/Users/Sandu/git/BookShopAngularApp/BookStore/src/assets/cart.jpg");
+height:1000px;
+
+
+}
+
+table, th, td {
+    border: 1px solid blue;
+    background:rgb(35, 153, 35)
+}
